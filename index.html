@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox practice</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            /* font: 1em sans-serif; */
+        }
+        .container{
+            width: 100%;
+            height: 540px;
+            background-image: linear-gradient( to left, rgb(218, 216, 121), rgb(184, 83, 5));
+            display: flex;
+            justify-content:flex-end ;
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+            /* text-align: center; */
+        }
+        /* .container .box{
+            display: flex;
+            align-items: center;
+            justify-content:flex-end ;
+            } */
+        .box{
+            width: 100%;
+            display: flex;
+            justify-content:flex-end ;
+            padding: 0px 0px 0px 0px;
+            width: 80%;
+            height: 30px;
+            /* flex-direction: row; */
+            /* border: 2px solid black; */
+            background-color: white;
+            border-radius:25px;
+            margin-bottom: 40px;
+
+        }
+        .box .text{
+            /* display: flex;
+            text-align: center;
+            top: 7px; */
+            /* background-color: rgb(255, 255, 255); */
+            border: none;
+            width: 100%;
+            border-radius: 9px 0px 0px 9px ;
+        background-image: linear-gradient( to left, rgb(218, 216, 121), rgb(184, 83, 5));
+        text-decoration: none;
+    }
+    
+    
+    .send{
+        /* background-color: transparent; */
+        background-color: rgb(7, 121, 64);
+        border: none;
+        border-left: 1px solid;
+        padding: 5px;
+        border-radius: 0px 9px 9px 0px ;
+    }
+    .chatarea01{
+        
+        display: flex;
+        /* justify-content: flex-start ; */
+        background-color: lightpink;
+        background-image: linear-gradient( to left, rgb(218, 216, 121), rgb(184, 83, 5));
+        padding: 20px;
+        
+    }
+    .chatarea02{
+        
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start ;
+        background-color: lightpink;
+        background-image: linear-gradient( to left, rgb(218, 216, 121), rgb(184, 83, 5));
+        padding: 20px;
+
+        }
+        .chatarea01 .image{
+            width: 20px;
+            height:30px;
+
+        }
+        .chatarea02 .image{
+            width: 20px;
+            height:30px;
+
+        }
+        #per1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(220, 220, 207);
+            border-radius: 0px 10px 10px 10px ;
+            padding: 9px;
+            margin-left: 8px;
+        }
+        #per2{
+            display: flex;
+            flex-direction: row-reverse ;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: rgb(220, 220, 207);
+            border-radius: 10px 0px 10px 10px ;
+            padding: 9px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chatarea01">
+        <img src="./3.png" alt="" class="image">
+        <div class="person" id="per1">ASSALAM O ALIKUM BHAI KIA HAL HEN?</div>
+    </div>
+    <div class="chatarea02">
+        <img src="./3.png" alt="" class="image">
+        <div class="person" id="per2">W.SALM BHAI MAY THEK AP BATAO </div>
+    </div>
+    <div class="container">
+        <!-- <div class="chatarea01">
+            <img src="./3.png" alt="" class="image">
+            <div class="person" id="per1">ASSALAM O ALIKUM BHAI KIA HAL HEN?</div>
+        </div>
+        <div class="chatarea02">
+            <img src="./3.png" alt="" class="image">
+            <div class="person" id="per2">W.SALM BHAI MAY THEK AP BATAO </div>
+        </div> -->
+        <div class="box" id="1"> 
+            <input type="text" class="text" id="text">
+            <button class="send">send</button>
+        </div>
+        <!--<div class="box" id="3">murfadis a good boy</div>
+        <div class="box" id="4">murfadis a good boy</div>
+        <div class="box" id="5">murfadis a good boy</div> -->
+    </div>
+</body>
+</html>
